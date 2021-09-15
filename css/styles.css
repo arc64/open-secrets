@@ -20,8 +20,8 @@ h1 {
 h2 {
 	font-size: 1rem;
 	font-weight: 400;
-	margin-top: 5em;
-    margin-bottom: 5em;
+	margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 h1, aside {
@@ -113,6 +113,21 @@ section {
     padding-left: 2rem;
 }
 
+aside {
+	font-size: 1rem;
+	word-spacing: 1.3rem;
+	border: 2px solid #000;
+	letter-spacing: 2px;
+	padding: 5px 10px;
+	margin: 0 0 10px 0;
+	line-height: 24px;
+	position: absolute;
+	transform-origin: bottom left;
+    transform: rotate(-90deg);
+	/* background: none; */
+	white-space: nowrap;
+}
+
 .truth {
 	display: block;
 	margin-bottom: 500px;
@@ -123,30 +138,19 @@ section {
 	margin-bottom: 400px;
 }
 
+.spacer.two {
+	margin-bottom: 600px;
+}
+
 /* texts */
 .transcripts {
 	margin-top:400px;
 }
 
 .transcripts aside {
-	font-size: 1rem;
-    word-spacing: 1.3rem;
-	border: 2px solid #000;
-	letter-spacing: 2px;
-	padding: 5px 10px;
-	margin: 0 0 10px 0;
-	line-height: 24px;
-	
 	/* rotate all the things! */
-	position: absolute;
 	bottom: -1em;
-    left: 0;
-	left: -1em;
-    background: none;
-    transform-origin: bottom left;
-    transform: rotate(-90deg);
-
-	white-space: nowrap;
+	left: -1em;	
 }
 
 .transcripts section:nth-of-type(1) {
@@ -167,6 +171,91 @@ section {
 
 .transcripts section:nth-of-type(5) {
 	margin-bottom: 2rem;
+}
+
+
+.maga aside {
+    top: 380px;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+}
+
+.covid {
+	margin-bottom: 10em;
+}
+
+.covid aside {
+	top: 480px;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+}
+
+.covid h2 {
+	text-align: right;
+}
+
+.religious aside {
+	top: 180px;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);   
+}
+
+.religious img {
+	position: relative;
+    top: -10em;
+}
+
+.politics h2 {
+	max-width: 23em;
+	float: right;
+}
+
+.politics aside {
+	top: 480px;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);  
+}
+
+.afghanistan {
+	margin-bottom: 20em;
+}
+
+.afghanistan aside {
+	top: 1160px;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);   
+}
+
+.palistine h2 {
+	text-align: right;
+}
+
+.palestine aside {
+	top: -10em;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);  
+}
+
+.saviors aside {
+	top: 390px;
+    right: -1em;
+    transform-origin: top right;
+    transform: rotate(-90deg);  
+}
+
+.groups {
+	margin-bottom: 10em;
+}
+
+.groups aside {
+	top: 590px;
+    transform: rotate(0);
 }
 
 /* 
@@ -236,6 +325,27 @@ canvas {
     top: 5em;
 	left: 43em;
     transform: rotate(25deg);
+}
+
+.sections .spacer .arrow-light.one {
+	left: 20em;
+}
+
+.sections .spacer .arrow-light.two {
+	top: 200px;
+    position: absolute;
+	left: 5em;
+	transform: rotate(-25deg);
+}
+
+.sections .spacer .arrow-cluster.one {
+	left: 20rem;
+}
+
+.sections .spacer .arrow-cluster.two {
+	top: 100px;
+    left: 35rem;
+	transform: rotate(3deg);
 }
 
 .spacer .arrow-light.one {
