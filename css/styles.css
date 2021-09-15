@@ -28,9 +28,33 @@ h1, aside {
 	text-transform: uppercase;
 }
 
-p, a, li {
+p, a, li, a {
 	font-size: 0.8rem;
 }
+
+a {
+	outline: none;
+	text-decoration: none;
+	padding: 2px 1px 0;
+	border-bottom: 1px solid;
+}
+  
+a:link {
+	color: #000;
+}
+
+a:visited {
+	color: rgb(61, 60, 60);
+}
+
+a:focus {
+	border-bottom: 1px solid;
+}
+  
+a:hover {
+	cursor: pointer;
+}
+ 
 
 .wrapper, section {
 	position: relative;
@@ -67,11 +91,16 @@ p, a, li {
 	clear: both;
 }
 
-a {
+.out a {
 	text-align: center;
+	border-bottom: none;
     margin-top: 0.7rem;
     display: block;
  	cursor: pointer;
+}
+
+.out a:focus, .out a:hover {
+	text-decoration: underline;
 }
 
 section {
@@ -271,4 +300,36 @@ canvas {
 .about p {
 	line-height: 1.5rem;
     margin-bottom: 1em;
+}
+
+.encouragement {
+	display: block;
+	height: 615px;
+}
+
+.encouragement span {
+	float: right;
+    margin-top: 20rem;
+}
+
+.encouragement p {
+	line-height: 1rem;
+    margin-bottom: 0;
+}
+
+.encouragement .arrow-cluster.one{
+	top: 8rem;
+    left: 48rem;
+}
+
+.credits {
+	border: 2px solid #000;
+	text-transform: uppercase;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+}
+
+.credits p, .credits a {
+	font-size: 0.73rem;
 }
