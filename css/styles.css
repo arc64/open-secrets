@@ -21,26 +21,6 @@ h2 {
 	font-weight: 400;
 }
 
-aside {
-	font-size: 1rem;
-    word-spacing: 0.8rem;
-	border: 2px solid #000;
-	letter-spacing: 2px;
-	padding: 5px 10px;
-	margin: 0 0 10px 0;
-	line-height: 24px;
-
-	/* rotate all the things! */
-	position: absolute;
-	bottom: 0px;
-    left: 0;
-    background: none;
-    transform-origin: bottom left;
-    transform: rotate(-90deg);
-
-	white-space: nowrap;
-}
-
 h1, aside {
 	text-transform: uppercase;
 }
@@ -56,7 +36,7 @@ p, a, li {
 .content {
 	margin:	0 auto;
 	padding: 5rem 5rem;
-    max-width: 50rem;
+	max-width: 65rem;
 	width: 100%;
 }
 
@@ -92,10 +72,50 @@ a {
 }
 
 section {
-	margin-bottom: 14rem;
     padding-left: 2rem;
 }
 
+.transcripts aside {
+	font-size: 1rem;
+    word-spacing: 2.3rem;
+	border: 2px solid #000;
+	letter-spacing: 2px;
+	padding: 5px 10px;
+	margin: 0 0 10px 0;
+	line-height: 24px;
+
+	/* rotate all the things! */
+	position: absolute;
+	bottom: 0px;
+    left: 0;
+    background: none;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+
+	white-space: nowrap;
+}
+
+.transcripts section:nth-of-type(1) {
+	margin-bottom: 1rem;
+}
+
+.transcripts section:nth-of-type(2) {
+	margin-bottom: 5rem;
+}
+
+.transcripts section:nth-of-type(3) {
+	margin-bottom: 17rem;
+}
+
+.transcripts section:nth-of-type(4) {
+	margin-bottom: 1rem;
+}
+
+.transcripts section:nth-of-type(5) {
+	margin-bottom: 2rem;
+}
+
+/* 
 canvas {
 	pointer-events: none;
 	z-index: 1;
@@ -104,6 +124,39 @@ canvas {
 	height: 100%;
 	left: 0;
 	top: 0;
+} */
+
+/* arrows */
+.arrow-dark {
+	background: url(../images/cursor-dark.png);
+	height: 127px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform-origin: top left;
+}
+
+.arrow-dark.one {
+	transform: rotate(0deg);
+	margin-left: 5em; 
+}
+
+.arrow-dark.two {
+	transform: rotate(-12deg);
+    margin-left: 3em;
+}
+
+.arrow-light {
+	background: url(../images/cursor-white.png);
+	height: calc(824px * 0.6);
+    width: calc(835px * 0.6);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform-origin: top left;
+}
+
+.arrow-light.one {
+	/* transform: rotate(-12deg);
+    margin-left: 3em; */
 }
 
 /* animations */
@@ -112,7 +165,7 @@ canvas {
 	--animate-delay: 1s;
 	--animate-repeat: 1;
 } */
-
+/* animate__animated animate__bounce animate__repeat-2 */
 .animate__animated.animate__repeat-2 {
     -webkit-animation-iteration-count: 2;
     animation-iteration-count: 2;
