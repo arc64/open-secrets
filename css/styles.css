@@ -2,11 +2,94 @@
 
 /* Theme */
 body {
-	background-color:  hotpink;
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+	font-family: 'DM Mono', Consolas, 'Andale Mono WT', 'Lucida Console', Courier, monospace, serif;
+	background-color:  #ffd1dc;
+}
+
+
+h1 {
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1rem;
+    word-spacing: 0.8rem;
+	border: 2px solid #000;
+	letter-spacing: 2px;
+	padding: 5px 10px;
+	margin: 0 0 10px 0;
+	line-height: 24px;
+
+	/* rotate all the things! */
+	position: absolute;
+	bottom: 0px;
+    left: 0;
+    background: none;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+
+	white-space: nowrap;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+p, a, li {
+	font-size: 0.8rem;
+}
+
+.hashtag {
+	position: relative;
+	
+}
+
+.content {
+	margin:	0 auto;
+	padding: 5rem 5rem;
+    max-width: 50rem;
+	width: 100%;
+}
+
+.out {
+	width: 100%;
+    display: block;
+    height: 3em;
+	margin-bottom: 1rem;
+}
+
+.about span {
+	float: right;	
+    display: block;
+	width: 15rem;
+    height: 3em;
+    border: 3px solid #fff;
+    border-radius: 7.5rem / 50%;
+}
+
+.about span:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
 }
 
 a {
+	text-align: center;
+    margin-top: 0.7rem;
+    display: block;
  	cursor: pointer;
+}
+
+section {
+	margin-bottom: 14rem;
+    padding-left: 2rem;
 }
 
 canvas {
@@ -19,5 +102,9 @@ canvas {
 	top: 0;
 }
 
+/* about */
 
-
+p {
+	line-height: 1.5rem;
+    margin-bottom: 1em;
+}
