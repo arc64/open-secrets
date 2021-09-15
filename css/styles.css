@@ -32,6 +32,12 @@ p, a, li, a {
 	font-size: 0.8rem;
 }
 
+ul {
+	margin-top: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
 a {
 	outline: none;
 	text-decoration: none;
@@ -302,6 +308,10 @@ canvas {
     margin-bottom: 1em;
 }
 
+.about p.associate {
+	margin-bottom: 0.2em;
+}
+
 .encouragement {
 	display: block;
 	height: 615px;
@@ -319,7 +329,19 @@ canvas {
 
 .encouragement .arrow-cluster.one{
 	top: 8rem;
-    left: 48rem;
+    right: 0;
+}
+
+.logo.program, .logo.institute {
+	float: left;
+}
+
+.logo.institute {
+	width: 183px;
+}
+
+.logo.program {
+	width: 423px;
 }
 
 .credits {
@@ -328,6 +350,7 @@ canvas {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: 0.5rem;
+	clear: both;
 }
 
 .credits p, .credits a {
